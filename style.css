@@ -346,6 +346,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-left: 10px;
 }
 .content-display {
     display: flex;
@@ -448,8 +449,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 73px;
-    padding-bottom: 64px;
+    padding: 73px 30px 64px;
 }
 .last-block__text {
     width: 540px;
@@ -469,9 +469,9 @@ body {
     letter-spacing: -1.2px;
 }
 @media (max-width: 995px) {
-    .container {
-        padding: 10px 10px;
-    }
+.container {
+    padding: 10px 10px;
+}
 .shapka-info__title {
     font-size: 69px;
     text-align: center;
@@ -497,21 +497,96 @@ body {
 .content__title-services {
     font-size: 42px;
     line-height: 48px;
+    text-align: center;
+}
+.content-text__describe {
+    width: 460px;
+    }
+.content-story__display {
+    justify-content: space-around;
+}
+.content-reviews {
+    width: 345px;
+    margin-right: 120px;
+}
+.content-reviews__title {
+    padding-top: 0px;
+    font-size: 36px;
+    line-height: 76px;
+}
+.content-pictures__title {
+    padding-top: 0px;
+    padding-bottom: 50px;
+    font-size: 36px;
+    line-height: 76px;
+}
+.content-display {
+    width: 100%;
+}
+.content-display-blocks {
+    padding-top: 52px;
+}
+.last-block__logo {
+    line-height: 50px;
+}
+.last-block__text {
+    line-height: 45px;
+}
+.content-menu {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.content-blockquote {
+    max-width: 995px;
+    width: 100%;
+    justify-content: flex-start;
+}
+.content-blockquote__text {
+    font-size: 18px;
+    line-height: 28px;
+    width: 310px;
+}
+.content-blockquote__img {
+    position: absolute;
+    top: 2px;
+    left: 310px;
+}
+.content-price-card {
+    margin: 10px;
+}
+.content-price-card__button {
+    padding: 15px 30px;
+    margin-bottom: 10px;
+    width: 160px;
+    text-align: center;
+}
+.content-price-card__free {
+    font-size: 40px;
+}
+.content-pricing__title {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 }
 @media (max-width: 767px) {
+    body {
+        min-width: 320px;
+    }
     .shapka-block1 {
         flex-direction: column;
         justify-content: center;
         padding-top: 42px;
+    }
+    .shapka-position {
+        top: 252px;
     }
     .shapka-menu__list {
         flex-wrap: wrap;
         justify-content: center;
     }
     .shapka-info__title {
-            font-size: 45px;
-            line-height: 55px;
+        font-size: 45px;
+        line-height: 55px;
     }
      .shapka-menu__name {
         padding: 5px 10px;
@@ -523,7 +598,147 @@ body {
     .shapka-info__title {
         padding-bottom: 0px;
     }
-    .shapka-position {
-        top: 265px;
+    .shapka-forma__name {
+        font-size: 20px;
+        padding-top: 18px;
+        padding-bottom: 20px;
     }
+    .shapka-forma__field {
+        font-size: 18px;
+        padding: 15px 0px 15px 17px;
+        margin-bottom: 10px;
+    }
+    .shapka-forma__button {
+        font-size: 18px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-bottom: 18px;
+    }
+    .content__title-services {
+        font-size: 34px;
+        line-height: 30px;
+        text-align: center;
+    }
+    .content-cards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .content-card {
+        padding: 5px 10px 64px;
+    }
+    .content-story__display {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 24px;
+        padding-bottom: 18px;
+    }
+    .content-button {
+        margin-top: 25px;
+    }
+    .content-text__describe {
+        width: 300px;
+        max-width: 100%;
+    }
+    .content-button__describe {
+        padding: 18px 46px;
+    }
+    
+.content-pricing__title {
+    font-size: 30px;
+    line-height: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.content-price-cards {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.content-price-card {
+    margin: 10px;
+    width: 100%;
+}
+.content-price-card__free {
+    font-size: 35px;
+}
+.content-price-card__button {
+    padding: 10px 33px 10px 39px;
+    margin: 15px 0 15px;
+}
+.content-display-blocks {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+.content-display {
+    max-width: 767px;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+}
+.content-reviews__title {
+    font-size: 40px;
+    padding-top: 45px;
+}
+.content-reviews {
+    margin-right: 0px;
+    max-width: 767px;
+    width: 100%;
+}
+.content-blockquote {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0px;
+    margin-top: 30px;
+    position: static;
+    max-width: 700px;
+    width: 100%;
+}
+.content-blockquote__text {
+    max-width: 680px;
+    width: 100%;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+}
+.content-blockquote__img {
+    position: static;
+}
+.content-blockquote-bg-color {
+    margin-bottom: 20px;
+    padding-top: 0px;
+}
+.content-pictures__title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.content-menu {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.content-pictures__link {
+    padding-top: 20px;
+}
+.content-pictures__new {
+    font-size: 18px;
+    line-height: 25px;
+}
+.last-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 767px;
+}
+.last-block__text {
+    font-size: 18px;
+    line-height: 30px;
+}
+.last-block__logo {
+    font-size: 46px;
+    line-height: 55px;
+}
 }
